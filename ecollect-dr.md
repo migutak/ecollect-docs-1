@@ -2,7 +2,7 @@
 This documentation contains the steps to implement changes for DR
 1. Database connection jdbc
 2. Reports
-3. pm2 service 
+3. Docker containers 
 
 
 ## 1. Database connection jdbc
@@ -54,3 +54,13 @@ Restart tomcat
 $ sudo ./app/tomcat/bin/catalina.sh stop
 $ sudo ./app/tomcat/bin/catalina.sh start
 ```
+## 3. Docker containers
+Servers:[xx.xx.xx.71, xx.xx.xx.72, xx.xx.xx.74]\
+Change datasource environment variables for docker containers. Stop the running container and start a new one with the DR connection ddetails.\
+
+Stop & start container
+$ docker stop 
+
+Start new container
+
+
